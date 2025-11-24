@@ -17,18 +17,18 @@ Preprint
 
 ## Work Experiences
 
-* Scientific Society [COCO:], [brAIn]
+* Scientific Society [COCO:], [brAIn]  
 March 2021 - June 2021, March 2024 - February 2025
 
-* Google Developer Student Club
+* Google Developer Student Club  
 March 2024 - December 2024
 
-* Junior–Senior Department Representative
+* Junior–Senior Department Representative  
 March 2024 - December 2024
 
 ## Honors
 
-* 2020 SKKU Learning Fair (3rd place(Undergraduate Presidential Award))
+* 2020 SKKU Learning Fair (3rd place ; Undergraduate Presidential Award)
 
 * 2023 SKKU Dean's List (4.5 in 21 credits)
 
