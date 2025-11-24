@@ -1,1 +1,1 @@
-# shamanneo.github.io
+# Jinho Kim.github.io
