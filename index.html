@@ -8,7 +8,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" href="data:,">
@@ -21,13 +21,12 @@
   <a class="nav-mark" href="#top">JK</a>
   <nav>
     <a href="#about">About</a>
-    <a href="#research">Research</a>
     <a href="#publications">Publications</a>
     <a href="#experience">Experience</a>
     <a href="#honors">Honors</a>
     <a href="#contact">Contact</a>
   </nav>
-  <a class="nav-cv" href="assets/cv.pdf" target="_blank" rel="noopener">CV ↓</a>
+  <a class="nav-cv" href="assets/cv.pdf" target="_blank" rel="noopener">CV ↗</a>
 </header>
 
 <main id="top">
@@ -43,17 +42,12 @@
         Prof.&nbsp;<a href="https://www.ciplab.kr/members/professor" target="_blank" rel="noopener">Seon Joo Kim</a>.
       </p>
       <div class="hero-actions reveal">
-        <a class="btn btn-primary" href="assets/cv.pdf" target="_blank" rel="noopener">Download CV</a>
-        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        <a class="btn btn-primary" href="#contact">Get in touch</a>
+        <a class="btn btn-ghost" href="assets/cv.pdf" target="_blank" rel="noopener">View CV ↗</a>
       </div>
-      <dl class="exposure-strip reveal" aria-hidden="true">
-        <div class="ev-stop ev-under"><dt>UE</dt><dd>−2 EV</dd></div>
-        <div class="ev-stop ev-mid"><dt>Mid</dt><dd>0 EV</dd></div>
-        <div class="ev-stop ev-over"><dt>OE</dt><dd>+2 EV</dd></div>
-      </dl>
     </div>
     <div class="hero-portrait reveal">
-      <img src="assets/profile.jpg" alt="Portrait of Jinho Kim on a bridge in Zürich" width="900" height="1125">
+      <img src="assets/profile.jpg" alt="Portrait of Jinho Kim on a bridge in Zürich" width="900" height="968">
     </div>
   </section>
 
@@ -65,7 +59,8 @@
       </div>
       <div class="section-body">
         <p>
-          I'm an M.S. student at Yonsei University, advised by Prof. Seon Joo Kim
+          I'm an M.S. student at Yonsei University, advised by Prof.
+          <a href="https://www.ciplab.kr/members/professor" target="_blank" rel="noopener">Seon Joo Kim</a>
           in the Computational Intelligence &amp; Photography Lab (CIPLAB). Before that,
           I completed my B.S. in Applied Artificial Intelligence at Sungkyunkwan University,
           where I worked as an undergraduate research assistant in the AIM Lab under
@@ -78,67 +73,8 @@
           glad to talk research or explore collaborations, so feel free to reach out.
         </p>
         <div class="mini-facts">
-          <div><span class="mono">M.S.</span> Yonsei University, 2025–present</div>
+          <div><span class="mono">M.S.</span> Yonsei University, 2025–present — GPA 4.3/4.3</div>
           <div><span class="mono">B.S.</span> Sungkyunkwan University, Applied AI — GPA 4.24/4.5</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FEATURED RESEARCH ===== -->
-  <section class="section" id="research">
-    <div class="section-grid">
-      <div class="section-label">
-        <p class="eyebrow">02 · Featured Work</p>
-      </div>
-      <div class="section-body">
-        <div class="feature-cards">
-
-          <article class="feature-card card-amber">
-            <div class="feature-top">
-              <span class="venue-tag">ECCV 2026</span>
-              <span class="mono feature-code">DOME&#8209;HDR</span>
-            </div>
-            <h3>Dual‑Output Multi‑Exposure HDR Reconstruction via SDR Fusion and Gain Map Inverse Tone Mapping</h3>
-            <p class="authors">Jinho Kim, Jinwoo Kim, Seon Joo Kim</p>
-            <p class="abstract">
-              DOME‑HDR reconstructs both a standard‑dynamic‑range image and a full HDR image from
-              three bracketed exposures in a single pass. A LoRA‑adapted diffusion model first
-              synthesizes a balanced SDR image, guided by a dual cross‑attention module that pulls
-              structural and color detail from the under‑ and over‑exposed frames while keeping the
-              mid‑exposure frame as an anchor. This SDR result then drives an HDR Prior‑guided Gain
-              Map network that predicts a spatially varying gain map, expanding the dynamic range in
-              a way that stays consistent with the SDR output.
-            </p>
-            <div class="feature-links">
-              <a href="https://arxiv.org/abs/2608.05626" target="_blank" rel="noopener">Paper ↗</a>
-              <a href="https://arxiv.org/pdf/2608.05626" target="_blank" rel="noopener">PDF ↗</a>
-            </div>
-          </article>
-
-          <article class="feature-card card-blue">
-            <div class="feature-top">
-              <span class="venue-tag">ECCV 2026</span>
-              <span class="mono feature-code">LIIFusion</span>
-            </div>
-            <h3>LIIFusion: Coarse‑to‑fine Framework for Generative MEF via Implicit Neural Representation</h3>
-            <p class="authors">Sangmin Han, Jinho Kim, Jinwoo Kim, Dongyoung Kim, Seon Joo Kim</p>
-            <p class="abstract">
-              Multi‑exposure fusion aims to combine differently exposed shots into one image with an
-              extended dynamic range, but overexposed regions often need generative completion, and
-              existing diffusion‑based methods are slow and lose fine structure. LIIFusion runs a
-              low‑resolution generative stage that restores structure in blown‑out highlights through
-              adaptive exposure correction, then a local implicit function upsamples the result at
-              arbitrary resolution by directly querying the high‑resolution exposure sources — up to
-              3.5× faster than prior generative methods, with matching or better structural and
-              perceptual quality.
-            </p>
-            <div class="feature-links">
-              <a href="https://arxiv.org/abs/2607.17611" target="_blank" rel="noopener">Paper ↗</a>
-              <a href="https://arxiv.org/pdf/2607.17611" target="_blank" rel="noopener">PDF ↗</a>
-            </div>
-          </article>
-
         </div>
       </div>
     </div>
@@ -148,7 +84,7 @@
   <section class="section" id="publications">
     <div class="section-grid">
       <div class="section-label">
-        <p class="eyebrow">03 · Publications</p>
+        <p class="eyebrow">02 · Publications</p>
         <p class="label-note">* equal contribution</p>
       </div>
       <div class="section-body">
@@ -187,7 +123,7 @@
   <section class="section" id="experience">
     <div class="section-grid">
       <div class="section-label">
-        <p class="eyebrow">04 · Experience</p>
+        <p class="eyebrow">03 · Experience</p>
       </div>
       <div class="section-body">
         <ul class="timeline">
@@ -225,7 +161,7 @@
   <section class="section" id="honors">
     <div class="section-grid">
       <div class="section-label">
-        <p class="eyebrow">05 · Honors &amp; Awards</p>
+        <p class="eyebrow">04 · Honors &amp; Awards</p>
       </div>
       <div class="section-body">
         <ul class="honors-list">
@@ -247,14 +183,12 @@
   <section class="section contact-section" id="contact">
     <div class="section-grid">
       <div class="section-label">
-        <p class="eyebrow">06 · Get in Touch</p>
+        <p class="eyebrow">05 · Get in Touch</p>
       </div>
       <div class="section-body">
         <p class="contact-lead">Open to research collaborations, questions about the work above, or just talking vision.</p>
         <div class="contact-row">
-          <button class="btn btn-primary" id="emailBtn" type="button" data-user="kjinho" data-domain="yonsei.ac.kr">
-            <span id="emailLabel">Reveal email</span>
-          </button>
+          <a class="btn btn-primary" href="mailto:kjinho@yonsei.ac.kr">Email me</a>
           <a class="btn btn-ghost" href="https://github.com/vlsrang" target="_blank" rel="noopener">GitHub ↗</a>
           <a class="btn btn-ghost" href="https://www.linkedin.com/in/jinho-kim-07a940298" target="_blank" rel="noopener">LinkedIn ↗</a>
         </div>
