@@ -214,18 +214,19 @@ ul{ list-style:none; margin:0; padding:0; }
 .btn-ghost:hover{ background: var(--ink); color: var(--paper); transform: translateY(-1px); }
 
 .hero-portrait{
-  align-self: stretch;
+  align-self: center;
   width: 300px;
-  height: 350px;
+  height: 345px;
   margin-block: 18px 0;
   border-radius: 16px;
   padding: 5px;
   background: linear-gradient(155deg, var(--shadow), var(--highlight));
 }
+
 .hero-portrait img{
+  width: 100%;
   height: 100%;
-  width: auto;
-  aspect-ratio: 4/4.6;
+  aspect-ratio: auto;
   object-fit: cover;
   object-position: center 15%;
   border-radius: 12px;
