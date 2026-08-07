@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jinho Kim — M.S. Student, Yonsei University</title>
+<meta name="description" content="Jinho Kim — M.S. student at CIPLAB, Yonsei University, working on generative AI for low-level vision, multi-exposure fusion and HDR reconstruction.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:,">
+</head>
+<body>
+
+<div class="range-meter" id="rangeMeter" aria-hidden="true"></div>
+
+<header class="site-nav" id="siteNav">
+  <a class="nav-mark" href="#top">JK</a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#experience">Experience</a>
+    <a href="#honors">Honors</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="nav-cv" href="assets/cv.pdf" target="_blank" rel="noopener">CV ↓</a>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">M.S. Student · Computational Intelligence &amp; Photography Lab · Yonsei University</p>
+      <h1 class="reveal">Jinho&nbsp;Kim</h1>
+      <p class="hero-sub reveal">
+        I build generative models for low-level vision — currently
+        multi-exposure fusion and HDR reconstruction — advised by
+        Prof.&nbsp;<a href="https://www.ciplab.kr/members/professor" target="_blank" rel="noopener">Seon Joo Kim</a>.
+      </p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary" href="assets/cv.pdf" target="_blank" rel="noopener">Download CV</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </div>
+      <dl class="exposure-strip reveal" aria-hidden="true">
+        <div class="ev-stop ev-under"><dt>UE</dt><dd>−2 EV</dd></div>
+        <div class="ev-stop ev-mid"><dt>Mid</dt><dd>0 EV</dd></div>
+        <div class="ev-stop ev-over"><dt>OE</dt><dd>+2 EV</dd></div>
+      </dl>
+    </div>
+    <div class="hero-portrait reveal">
+      <img src="assets/profile.jpg" alt="Portrait of Jinho Kim on a bridge in Zürich" width="900" height="1125">
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="section-grid">
+      <div class="section-label">
+        <p class="eyebrow">01 · Summary</p>
+      </div>
+      <div class="section-body">
+        <p>
+          I'm an M.S. student at Yonsei University, advised by Prof. Seon Joo Kim
+          in the Computational Intelligence &amp; Photography Lab (CIPLAB). Before that,
+          I completed my B.S. in Applied Artificial Intelligence at Sungkyunkwan University,
+          where I worked as an undergraduate research assistant in the AIM Lab under
+          Prof. <a href="https://www.csehong.com/" target="_blank" rel="noopener">Sungeun Hong</a>.
+        </p>
+        <p>
+          My research sits in generative AI for low-level vision. Right now I'm focused on
+          multi-exposure fusion and HDR reconstruction — using diffusion models and implicit
+          neural representations to recover detail a single exposure can't capture. I'm always
+          glad to talk research or explore collaborations, so feel free to reach out.
+        </p>
+        <div class="mini-facts">
+          <div><span class="mono">M.S.</span> Yonsei University, 2025–present</div>
+          <div><span class="mono">B.S.</span> Sungkyunkwan University, Applied AI — GPA 4.24/4.5</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED RESEARCH ===== -->
+  <section class="section" id="research">
+    <div class="section-grid">
+      <div class="section-label">
+        <p class="eyebrow">02 · Featured Work</p>
+      </div>
+      <div class="section-body">
+        <div class="feature-cards">
+
+          <article class="feature-card card-amber">
+            <div class="feature-top">
+              <span class="venue-tag">ECCV 2026</span>
+              <span class="mono feature-code">DOME&#8209;HDR</span>
+            </div>
+            <h3>Dual‑Output Multi‑Exposure HDR Reconstruction via SDR Fusion and Gain Map Inverse Tone Mapping</h3>
+            <p class="authors">Jinho Kim, Jinwoo Kim, Seon Joo Kim</p>
+            <p class="abstract">
+              DOME‑HDR reconstructs both a standard‑dynamic‑range image and a full HDR image from
+              three bracketed exposures in a single pass. A LoRA‑adapted diffusion model first
+              synthesizes a balanced SDR image, guided by a dual cross‑attention module that pulls
+              structural and color detail from the under‑ and over‑exposed frames while keeping the
+              mid‑exposure frame as an anchor. This SDR result then drives an HDR Prior‑guided Gain
+              Map network that predicts a spatially varying gain map, expanding the dynamic range in
+              a way that stays consistent with the SDR output.
+            </p>
+            <div class="feature-links">
+              <a href="https://arxiv.org/abs/2608.05626" target="_blank" rel="noopener">Paper ↗</a>
+              <a href="https://arxiv.org/pdf/2608.05626" target="_blank" rel="noopener">PDF ↗</a>
+            </div>
+          </article>
+
+          <article class="feature-card card-blue">
+            <div class="feature-top">
+              <span class="venue-tag">ECCV 2026</span>
+              <span class="mono feature-code">LIIFusion</span>
+            </div>
+            <h3>LIIFusion: Coarse‑to‑fine Framework for Generative MEF via Implicit Neural Representation</h3>
+            <p class="authors">Sangmin Han, Jinho Kim, Jinwoo Kim, Dongyoung Kim, Seon Joo Kim</p>
+            <p class="abstract">
+              Multi‑exposure fusion aims to combine differently exposed shots into one image with an
+              extended dynamic range, but overexposed regions often need generative completion, and
+              existing diffusion‑based methods are slow and lose fine structure. LIIFusion runs a
+              low‑resolution generative stage that restores structure in blown‑out highlights through
+              adaptive exposure correction, then a local implicit function upsamples the result at
+              arbitrary resolution by directly querying the high‑resolution exposure sources — up to
+              3.5× faster than prior generative methods, with matching or better structural and
+              perceptual quality.
+            </p>
+            <div class="feature-links">
+              <a href="https://arxiv.org/abs/2607.17611" target="_blank" rel="noopener">Paper ↗</a>
+              <a href="https://arxiv.org/pdf/2607.17611" target="_blank" rel="noopener">PDF ↗</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PUBLICATIONS ===== -->
+  <section class="section" id="publications">
+    <div class="section-grid">
+      <div class="section-label">
+        <p class="eyebrow">03 · Publications</p>
+        <p class="label-note">* equal contribution</p>
+      </div>
+      <div class="section-body">
+
+        <div class="pub-year">
+          <p class="mono year-tag">2026</p>
+          <ul class="pub-list">
+            <li>
+              <p class="pub-title">Dual‑Output Multi‑Exposure HDR Reconstruction via SDR Fusion and Gain Map Inverse Tone Mapping</p>
+              <p class="pub-meta">Jinho Kim, Jinwoo Kim, Seon Joo Kim — <span class="pub-venue">ECCV 2026</span></p>
+              <p class="pub-links">
+                <a href="https://arxiv.org/abs/2608.05626" target="_blank" rel="noopener">paper</a>
+                <a href="https://arxiv.org/pdf/2608.05626" target="_blank" rel="noopener">pdf</a>
+              </p>
+            </li>
+            <li>
+              <p class="pub-title">LIIFusion: Coarse‑to‑fine Framework for Generative MEF via Implicit Neural Representation</p>
+              <p class="pub-meta">Sangmin Han, Jinho Kim, Jinwoo Kim, Dongyoung Kim, Seon Joo Kim — <span class="pub-venue">ECCV 2026</span></p>
+              <p class="pub-links">
+                <a href="https://arxiv.org/abs/2607.17611" target="_blank" rel="noopener">paper</a>
+                <a href="https://arxiv.org/pdf/2607.17611" target="_blank" rel="noopener">pdf</a>
+              </p>
+            </li>
+            <li>
+              <p class="pub-title">Exploiting Over‑Exposure Tonal Priors for Two‑Pass Diffusion‑based Multi‑Exposure Fusion</p>
+              <p class="pub-meta">Jinho Kim, Seon Joo Kim — <span class="pub-venue">IPIU 2026</span></p>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section" id="experience">
+    <div class="section-grid">
+      <div class="section-label">
+        <p class="eyebrow">04 · Experience</p>
+      </div>
+      <div class="section-body">
+        <ul class="timeline">
+          <li>
+            <p class="mono tl-date">Jan 2025 — Present</p>
+            <p class="tl-title">CIPLAB, Yonsei University</p>
+            <p class="tl-desc">M.S. researcher advised by Prof. Seon Joo Kim — diffusion‑model study and any‑size image generation.</p>
+          </li>
+          <li>
+            <p class="mono tl-date">Jul 2024 — Jan 2025</p>
+            <p class="tl-title">AIM Lab, Sungkyunkwan University</p>
+            <p class="tl-desc">Undergraduate research assistant advised by Prof. Sungeun Hong — MotionBERT‑based 3D human pose estimation.</p>
+          </li>
+          <li>
+            <p class="mono tl-date">Mar 2024 — Dec 2024</p>
+            <p class="tl-title">Junior–Senior Department Representative</p>
+            <p class="tl-desc">Applied Artificial Intelligence, Sungkyunkwan University.</p>
+          </li>
+          <li>
+            <p class="mono tl-date">Mar 2024 — Dec 2024</p>
+            <p class="tl-title">Google Developer Student Club</p>
+            <p class="tl-desc">Member, SKKU chapter.</p>
+          </li>
+          <li>
+            <p class="mono tl-date">Mar 2021 — Jun 2021 · Mar 2024 — Feb 2025</p>
+            <p class="tl-title">Scientific Society [COCO:] / [brAIn]</p>
+            <p class="tl-desc">Study‑group activities and computer‑vision paper review.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HONORS ===== -->
+  <section class="section" id="honors">
+    <div class="section-grid">
+      <div class="section-label">
+        <p class="eyebrow">05 · Honors &amp; Awards</p>
+      </div>
+      <div class="section-body">
+        <ul class="honors-list">
+          <li><span class="mono honor-year">2025</span><span>AI SeoulTech Graduate Scholarship</span></li>
+          <li><span class="mono honor-year">2025</span><span>BEYOND GREEN AI For Thriving Future Pitch Competition — UNESCO Global Forum on the Ethics of AI, Round 2</span></li>
+          <li><span class="mono honor-year">2024</span><span>AICOSS AI Capstone Design Hackathon — 2nd Prize, Korean Association for Computer Education</span></li>
+          <li><span class="mono honor-year">2024</span><span>SKKU AI‑Education Hackathon — 2nd Prize</span></li>
+          <li><span class="mono honor-year">2024</span><span>AICOSS AI+X Industry‑academic Cooperation Hackathon — 3rd Prize</span></li>
+          <li><span class="mono honor-year">2024</span><span>Presidential Science Scholarship</span></li>
+          <li><span class="mono honor-year">2024</span><span>Trelleborg Capstone Project, THU Germany — Excellent result</span></li>
+          <li><span class="mono honor-year">2023</span><span>SKKU Dean's List — 4.5/4.5 GPA in 21 credits</span></li>
+          <li><span class="mono honor-year">2020</span><span>SKKU Learning Fair — 3rd place, Undergraduate Presidential Award</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="section-grid">
+      <div class="section-label">
+        <p class="eyebrow">06 · Get in Touch</p>
+      </div>
+      <div class="section-body">
+        <p class="contact-lead">Open to research collaborations, questions about the work above, or just talking vision.</p>
+        <div class="contact-row">
+          <button class="btn btn-primary" id="emailBtn" type="button" data-user="kjinho" data-domain="yonsei.ac.kr">
+            <span id="emailLabel">Reveal email</span>
+          </button>
+          <a class="btn btn-ghost" href="https://github.com/vlsrang" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/jinho-kim-07a940298" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Jinho Kim · CIPLAB, Yonsei University · Hosted on GitHub Pages</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
